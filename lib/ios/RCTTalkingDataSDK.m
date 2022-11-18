@@ -151,10 +151,9 @@ RCT_EXPORT_METHOD(onPageEnd:(NSString *)pageName)
 }
 
 RCT_EXPORT_METHOD(onEvent:(NSString *)eventId
-                  value:(double)eventValue
                   parameters:(NSDictionary*)parameters)
 {
-  [TalkingDataSDK onEvent:eventId value:eventValue parameters:parameters];
+  [TalkingDataSDK onEvent:eventId parameters:parameters];
 }
 
 RCT_EXPORT_METHOD(setGlobalKV:(NSString *)key value:(id)value)

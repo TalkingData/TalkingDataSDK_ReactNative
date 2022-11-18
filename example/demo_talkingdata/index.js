@@ -67,9 +67,8 @@ export default class RnTest extends Component {
                     onPress={
                         () => {
                           eventName = 'eventName';
-                          value = 5.21; //账户昵称
                           parameters = {'btn_name':'xx_btn','btn_color':'xxcolor'};
-                          TalkingDataSDK.onEvent(eventName,value,parameters);
+                          TalkingDataSDK.onEvent(eventName,parameters);
                         }
                     }
                 />

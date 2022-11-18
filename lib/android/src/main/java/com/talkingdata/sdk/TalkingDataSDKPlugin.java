@@ -67,8 +67,8 @@ public class TalkingDataSDKPlugin extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void onEvent(String eventId, double eventValue, ReadableMap map) {
-        TalkingDataSDK.onEvent(context,eventId,eventValue,map.toHashMap());
+    public void onEvent(String eventId, ReadableMap map) {
+        TalkingDataSDK.onEvent(context, eventId, map.toHashMap());
     }
 
     @ReactMethod
