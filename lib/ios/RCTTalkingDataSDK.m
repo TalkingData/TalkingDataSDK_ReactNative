@@ -113,9 +113,14 @@ RCT_ENUM_CONVERTER(TalkingDataGender,
 @implementation RCTTalkingDataSDK
 RCT_EXPORT_MODULE(TalkingDataSDK);
 
-RCT_EXPORT_METHOD(init:(NSString *)appID channelId:(NSString *)channelId custom:(NSString *)custom)
+RCT_EXPORT_METHOD(initSDK:(NSString *)appID channelId:(NSString *)channelId custom:(NSString *)custom)
 {
-  [TalkingDataSDK init:appID channelId:channelId custom:custom];
+  [TalkingDataSDK initSDK:appID channelId:channelId custom:custom];
+}
+
+RCT_EXPORT_METHOD(startA)
+{
+  [TalkingDataSDK startA];
 }
 
 RCT_REMAP_METHOD(getDeviceID, getDeviceID:(RCTPromiseResolveBlock)resolve

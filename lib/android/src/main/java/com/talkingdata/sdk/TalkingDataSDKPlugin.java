@@ -37,9 +37,13 @@ public class TalkingDataSDKPlugin extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void init(String appId, String channelId, String custom) {
-        TalkingDataSDK.init(context, appId, channelId, custom);
+    public void initSDK(String appId, String channelId, String custom) {
+        TalkingDataSDK.initSDK(context, appId, channelId, custom);
     }
+   @ReactMethod
+   public void startA(){
+    TalkingDataSDK.startA(context);
+   }
 
     @ReactMethod
     public void getDeviceID(Promise callback) {
